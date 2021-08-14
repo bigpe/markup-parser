@@ -30,3 +30,10 @@ class MarkupParserTestCase(TestCase):
         result = var_from_html(html_text, "test_var")
         self.assertEqual(result, success)
 
+    def test_find_nested_variable(self):
+        global success
+        global html_text
+
+        result = var_from_html(html_text, "window._test['test']")
+        self.assertEqual(result, success)
+

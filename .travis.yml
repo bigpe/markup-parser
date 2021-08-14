@@ -1,17 +1,12 @@
 os: linux
 dist: xenial
 language: python
+python:
+  - python3.6
+  - python3.7
+  - python3.8
+  - python3.9
 
-addons:
-  apt:
-    sources:
-      - deadsnakes
-    packages:
-      - python3.6
-      - python3.7
-      - python3.8
-      - python3.9
-      - pypy
 
 install:
   - pip install tox
