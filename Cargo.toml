@@ -8,9 +8,6 @@ authors = ["Aleskandr Sokolov <bigpewm@gmail.com>"]
 name = "markup_parser"
 crate-type = ["cdylib"]
 
-[build-system]
-requires = ["setuptools", "wheel", "setuptools-rust"]
-
 [dependencies]
 reqwest = { version="0.11.3", features=['blocking', 'json'] }
 scraper = "0.12.0"
